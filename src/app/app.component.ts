@@ -3,6 +3,7 @@ import { User } from "./interfaces/user";
 import { ActivatedRoute } from "@angular/router";
 import { UserService } from "./services/user/user.service";
 import { observable, Observable, of, Subject } from "rxjs";
+import { filter } from "rxjs/operators"; //在之后的版本中被整合到了rxjs中
 
 @Component({
   selector: 'app-root',
