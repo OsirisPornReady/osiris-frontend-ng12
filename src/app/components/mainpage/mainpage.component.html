@@ -1,0 +1,7 @@
+<div *ngFor="let video of videos;let i = index">
+  <img [src]="video.path" (click)="pushVideoDetail(i)">
+  <div>title: {{video.title}}</div>
+  <div>actor: {{video.actor}}</div>
+</div>
+<input type="button" value="back" routerLink="/login"/>
+<!--getVideoDetail(i)-->

@@ -1,0 +1,10 @@
+<div *ngIf="video">
+  <img [src]="video.path">
+  <div>title: {{video.title}}</div>
+  <div>actor: <div *ngFor="let actor of video.actor">{{actor}}</div></div>
+  <div>tag: <div *ngFor="let tag of video.tag">{{tag}}</div></div>
+  <div>path: {{video.path}}</div>
+  <!--  <input type="button" value="clean" routerLink="/mainpage"/>-->
+  <input type="button" value="clean" (click)="clean()"/>
+</div>
+

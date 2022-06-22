@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="loginbar"><label for="username">username: <input type="text" id="username" [(ngModel)]="username" (keydown)="keyEnter($event)"></label></div>
+  <div class="loginbar"><label for="username">password: <input type="password" id="pwd" [(ngModel)]="pwd" (keydown)="keyEnter($event)"/></label></div>
+  <input type="submit" value="start" (click)="login()">
+</div>
+
+
